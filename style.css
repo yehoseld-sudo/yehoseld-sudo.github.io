@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.link a:hover {
+    color: #FF3C2A;
+}
+
+@media (max-width: 991px){
+
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ff9000;
+        display: none; /* corregido */
+    }
+
+    .menu .navbar ul{
+        flex-direction: column;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial; /* corregido */
+    }
+
+    .logo{
+        display: none; /* corregido */
+    }
+
+    .menu .navbar ul li a:hover{
+        color: #ffffff;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt h1{
+        font-size: 45px;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
